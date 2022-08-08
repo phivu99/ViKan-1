@@ -1,0 +1,103 @@
+@use '../abstracts/' as *;
+
+
+
+/* flat Blog
+--------------------------------------------------*/
+.blog-box {
+    .media {
+        position: relative;
+    }
+    .content {
+        position: relative;
+        padding: 24px 29px 26px 30px;
+        margin-bottom: 30px;
+        h4 {
+            margin-bottom: 20px;
+            color: $color-3;
+        } 
+        h3 {
+            text-transform: capitalize;
+            margin-bottom : 14px;
+            a:hover {
+                color: $color-6;
+            }
+        } 
+        p {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid $color-5;
+        }
+        .meta {
+            .btn-button {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+                &::after {
+                    content: "\f0a9";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    margin-top: -2px;
+                }
+                
+            }
+            a:hover {
+                color: $color-3;
+            }
+            .comment {
+                font-size: 18px;
+                line-height: 28px;
+                &::before {
+                    content: "\f086";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-right: 9px;
+                    margin-top: -2px;
+                }
+            }
+        }
+        .days {
+            right: 30px;
+            width: 70px;
+            height: 80px;
+            text-align: center;
+            background-color: #56a918;
+            color: $color-1;
+            border-radius: 5px;
+            position: absolute;
+            top: -47px;
+            font-size: 18px;
+            padding-top: 19px;
+            .number {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: -1px;
+            }
+        }
+    }  
+}
+
+// .meta {
+//     margin-bottom: 6px;
+//     font-family: 'Poppins';
+//     .user {
+//         margin-right: 4px;  
+//         &::after {
+//             content: "|";
+//             margin-left: 4px;  
+//             font-weight: 400;
+//             color: var(--primary-color4);
+//         }
+//     }
+    
+// }
+.flat-help {
+    padding: 100px 0;
+    background-color: $color-3;
+    h2 {
+        color: #fff;
+    }
+}

@@ -1,0 +1,185 @@
+@use '../abstracts/' as *;
+
+/* side bar */
+.side-bar {
+    .widget {
+        &.search {
+            margin-bottom: 44px;
+        }
+        
+        .widget-title {
+            position: relative;   
+            padding-left: 1px;
+            &.title-list {
+                margin-bottom: 20px;
+            }
+            &.title-blogs {
+                margin-bottom: 23px;
+            }
+            &.title-tags {
+                margin-bottom: 24px;
+                font-family: 'Urbanist';
+                letter-spacing: 0.2px;
+                font-weight: 700;
+            }
+        }
+
+        .tags_cloud_inner {
+            a {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 400;
+                margin-right: 24.5px;
+                margin-bottom: 18px;
+                color: var(--primary-color4);
+                position: relative;
+                padding-bottom: 2px;
+                &::before {
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    position: absolute;
+                    background: var(--primary-color3);
+                    left: 0%;
+                    bottom: 0px;
+                    transform: translateX(-50%);
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition3;
+                }
+                &.active,
+                &:hover {
+                    color: var(--primary-color2);
+                    &::before {
+                        width: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* recent news */
+
+.widget {
+    &.widget-posts {
+        margin-bottom: 48px;
+    }
+    .recent-news {
+        margin-bottom: 33px;
+        li {
+            padding-bottom: 0px;
+            border-bottom: 1px solid #FFFFFF12;
+            &:last-child {
+                border-bottom: unset;
+                padding-bottom: 0px;
+            }
+            &:not(:first-of-type) {
+                padding-top: 10px;
+            }            
+            .thumb {
+                float: left;
+                overflow: hidden;
+                margin: 0px 20.5px 0px 0px;
+                position: relative;
+                width: 80px;
+                height: 80px;
+            }
+
+            .title-post {
+                padding-top: 8px;
+                h6 {
+                    margin-bottom: 8px;
+                }
+                h5 {
+                    line-height  : 24px;
+                    font-size: 16px;
+                    margin-bottom: 9px;
+                    color: #fff;
+                    text-transform: capitalize;
+                    position: relative;
+                    @include transition3;
+                    &:hover a {
+                        text-decoration: underline; 
+                    }
+                }
+            }
+        }   
+    }
+}
+
+/*widget categories */
+.widget {
+    &.widget-categories {
+        margin-bottom: 48px;
+        li {
+            position: relative;
+            margin-bottom: 13px;
+            display: flex;
+            justify-content:space-between;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: var(--primary-color4);
+                font-size: 16px;
+                font-weight: 400;
+                position: relative;
+                padding-bottom: 5px;
+                &::before {
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    position: absolute;
+                    background: var(--primary-color3);
+                    left: 0%;
+                    bottom: 0px;
+                    transform: translateX(-50%);
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition3;
+                }
+                
+                &:hover {
+                    color: var(--primary-color2);
+                    font-weight: 500;
+                    &::before {
+                        width: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+            }
+            .number {
+                font-size: 16px;
+                text-align: end;
+                color: var(--primary-color4);
+            }
+            &.active {
+                a {
+                    color: var(--primary-color2);
+                    font-weight: 500;
+                    letter-spacing: -0.1px;
+                    &::before {
+                        width: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                        left: 50%;
+                    }
+                }
+                .number {
+                    color: var(--primary-color2);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
