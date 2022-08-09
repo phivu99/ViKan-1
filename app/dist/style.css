@@ -223,6 +223,7 @@ h6 {
 
 h1 {
   font-size: 72px;
+  line-height: 82px;
 }
 
 h2 {
@@ -357,6 +358,11 @@ label.error {
 button {
   font-family: "League Spartan", sans-serif;
   cursor: pointer;
+}
+
+.title-30 {
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .font {
@@ -494,6 +500,26 @@ a:hover {
 .link-style-4 a:focus, .link-style-4 a:hover {
   color: #ff9c00;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link-style-6 a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.link-style-6 a:focus, .link-style-6 a:hover {
+  color: #45ab49;
+  text-decoration: none;
+  outline: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -901,14 +927,13 @@ a:hover {
   margin-bottom: 50px;
 }
 .heading-section h5 {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   margin-left: 1px;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary-color3);
+  color: #ff9c00;
 }
 .heading-section h2 {
-  line-height: 44px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .heading-section.style {

@@ -298,6 +298,7 @@ h6 {
 
 h1 {
     font-size: 72px;
+    line-height: 82px;
 }
 
 h2 {
@@ -437,6 +438,12 @@ button {
     cursor: pointer;
 }
 
+.title-30 {
+    font-size: 30px;
+    line-height: 40px;
+    
+}
+
 .font {
     font-family: 'League Spartan', sans-serif;
 }
@@ -559,6 +566,20 @@ a {
         @include transition3;
     }
 }
+
+.link-style-6 a {
+    text-decoration: none;
+    color: $color-2;
+    @include transition3;
+    &:focus,
+    &:hover {
+        color: $color-6;
+        text-decoration: none;
+        outline: 0;
+        @include transition3;
+    }
+}
+
 
 
 .text-color-1 {
@@ -966,14 +987,13 @@ a {
 .heading-section {
     margin-bottom: 50px;
     h5 {
-        margin-bottom: 17px;
+        margin-bottom: 15px;
         margin-left: 1px;
-        letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--primary-color3);
+        color: $color-3;
     }
     h2 {
-        line-height: 44px;
+        font-weight: 700;
         text-transform: capitalize;
     }
     &.style {

@@ -432,11 +432,7 @@ header {
 }
 
 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-    color: $color-3;
-}
-
-#main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
-    background: $color-3;
+    background: $color-6;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -541,22 +537,34 @@ header {
 // 
 .header-search {
     position: relative;
-    margin-right: 6px;
+    // margin-right: 6px;
     padding: 17px 0 10px;
-    .show-search {
-        // .icon-Vector {
-        //     opacity: 1;
-        //     color: #010C2A;
-        //     font-size: 20px;
-        // }
-    } 
     i {
         font-size: 18px;
         font-weight: 700;
-        margin-right: 20px;
+        margin-right: 25px;
         @include transition3;
         &:hover {
             color: $color-3;
+        }
+    }
+    .cart-box {
+        position: relative;
+        .cart-contents {
+            position: absolute;
+            border-radius: 50%;
+            background-color: $color-6;
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $color-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -16px;
+            right: 5px;
+            padding-top: 2px;
         }
     }
 }
