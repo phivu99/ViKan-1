@@ -168,7 +168,7 @@ header {
                     content: "";
                     position: absolute;
                     height: 3px;
-                    left  : 42%;
+                    left  : 48%;
                     bottom: -20px;
                     @include transition3;
                     transform: translateX(-50%);
@@ -554,6 +554,10 @@ header {
         font-size: 18px;
         font-weight: 700;
         margin-right: 20px;
+        @include transition3;
+        &:hover {
+            color: $color-3;
+        }
     }
 }
 

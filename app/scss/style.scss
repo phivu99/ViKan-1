@@ -150,7 +150,6 @@ img {
     max-width: 100%;
     height: auto;
     transform: scale(1);
-    border-radius: 5px;
     vertical-align: middle;
     -ms-interpolation-mode: bicubic
 }
@@ -433,6 +432,11 @@ label.error {
     background:  #FAF8FF;
 }
 
+button {
+    font-family: 'League Spartan', sans-serif;
+    cursor: pointer;
+}
+
 .font {
     font-family: 'League Spartan', sans-serif;
 }
@@ -451,6 +455,10 @@ label.error {
 
 .fw-6 {
     font-weight: 600
+}
+
+.lh-28 {
+    line-height: 28px
 }
 
 
@@ -531,7 +539,18 @@ a {
 .link-style-3 a {
     text-decoration: none;
     color: $color-1;
-    
+    @include transition3;
+    &:focus,
+    &:hover {
+        color: #ff9c00;
+        text-decoration: none;
+        @include transition3;
+    }
+}
+
+.link-style-4 a {
+    text-decoration: none;
+    color: $color-7;
     @include transition3;
     &:focus,
     &:hover {
@@ -671,7 +690,7 @@ a {
 -------------------------------------------------------------- */
 
 .themesflat-pagination {
-    margin-top: 29px;
+    margin-top: 30px;
     ul {
         position: relative;
         li {
@@ -689,7 +708,7 @@ a {
                 width        : 46px;
                 height       : 46px;
                 // border       : 1px solid var(--primary-color5);
-                line-height  : 46px;
+                line-height  : 48px;
                 border-radius: 200px;
                 background-color: #f3f6f0;
                 object-fit   : cover;  
@@ -704,11 +723,11 @@ a {
                 }  
 
                 &.style {
-                  
+                    line-height: 45px;
                     i {
                         font-size: 24px;
                         font-weight: 600;
-
+                        vertical-align: middle;
 
                     }
                 }
@@ -719,7 +738,8 @@ a {
 
 /* Scroll Top
 -------------------------------------------------------------- */
-#scroll-top {
+// #scroll-top
+.button-go {
     position: fixed;
     display: block;
     width: 50px;
@@ -971,58 +991,4 @@ a {
             transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
 }
 
-.hover-img {
-    .img-style {
-        overflow     : hidden; 
-        img {
-            width             : 100%;
-            object-fit        : cover;
-            -webkit-transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
-            transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
-            transition: transform 500ms ease;
-        }
-    }
-    &:hover {
-        img {
-            -webkit-transform: scale3d(1.1, 1.1, 1.1);
-            transform: scale3d(1.1, 1.1, 1.1);
-            -webkit-transition: all 2s cubic-bezier(0.30, 1, 0.35, 2) 0s;
-            transition: all 2s cubic-bezier(0.30, 1, 0.35, 2) 0s;   
-    
-        }
-    }
-} 
-
-.hv-one {
-    position: relative;
-    .hover-one::after,
-    .hover-one::before {
-        content: "";
-        background: var(--primary-color);
-        height: 0;
-        width: 0;
-        z-index: 1;
-        position: absolute;
-        opacity: .7;
-    }
-    .hover-one {
-        &::after {
-            z-index: 3;
-            bottom: 0;
-            left: 0;
-        }
-        &::before {
-            z-index: 3;
-            right: 0;
-            top: 0;
-        }
-    }
-    &:hover .hover-one::after,
-    &:hover .hover-one::before  {
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition-duration: 1.3s!important;
-    }
-}
 

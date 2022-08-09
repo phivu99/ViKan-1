@@ -86,7 +86,6 @@ img {
   max-width: 100%;
   height: auto;
   transform: scale(1);
-  border-radius: 5px;
   vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }
@@ -355,6 +354,11 @@ label.error {
   background: #FAF8FF;
 }
 
+button {
+  font-family: "League Spartan", sans-serif;
+  cursor: pointer;
+}
+
 .font {
   font-family: "League Spartan", sans-serif;
 }
@@ -373,6 +377,10 @@ label.error {
 
 .fw-6 {
   font-weight: 600;
+}
+
+.lh-28 {
+  line-height: 28px;
 }
 
 /* link style
@@ -465,6 +473,25 @@ a:hover {
   transition: all 0.3s ease;
 }
 .link-style-3 a:focus, .link-style-3 a:hover {
+  color: #ff9c00;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link-style-4 a {
+  text-decoration: none;
+  color: #f1f1f1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.link-style-4 a:focus, .link-style-4 a:hover {
   color: #ff9c00;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
@@ -599,7 +626,7 @@ a:hover {
 /* Pagination
 -------------------------------------------------------------- */
 .themesflat-pagination {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 .themesflat-pagination ul {
   position: relative;
@@ -619,7 +646,7 @@ a:hover {
   text-align: center;
   width: 46px;
   height: 46px;
-  line-height: 46px;
+  line-height: 48px;
   border-radius: 200px;
   background-color: #f3f6f0;
   object-fit: cover;
@@ -636,14 +663,18 @@ a:hover {
   color: #fff;
   border-color: #45ab49;
 }
+.themesflat-pagination ul li .page-numbers.style {
+  line-height: 45px;
+}
 .themesflat-pagination ul li .page-numbers.style i {
   font-size: 24px;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 /* Scroll Top
 -------------------------------------------------------------- */
-#scroll-top {
+.button-go {
   position: fixed;
   display: block;
   width: 50px;
@@ -664,12 +695,12 @@ a:hover {
   cursor: pointer;
   overflow: hidden;
 }
-#scroll-top.show {
+.button-go.show {
   right: 15px;
   opacity: 1;
   visibility: visible;
 }
-#scroll-top::before, #scroll-top::after {
+.button-go::before, .button-go::after {
   content: "";
   position: absolute;
   top: 0;
@@ -682,18 +713,18 @@ a:hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#scroll-top::before {
+.button-go::before {
   z-index: -1;
   background-color: var(--primary-color3);
 }
-#scroll-top::after {
+.button-go::after {
   content: "\f077";
   font-family: "Font Awesome 5 Pro";
   font-size: 18px;
   color: #ffffff;
   font-weight: 600;
 }
-#scroll-top:hover {
+.button-go:hover {
   transform: translateY(-7%);
 }
 
@@ -889,53 +920,6 @@ a:hover {
 .flat-im {
   -webkit-transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
   transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
-}
-
-.hover-img .img-style {
-  overflow: hidden;
-}
-.hover-img .img-style img {
-  width: 100%;
-  object-fit: cover;
-  -webkit-transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
-  transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
-  transition: transform 500ms ease;
-}
-.hover-img:hover img {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
-  -webkit-transition: all 2s cubic-bezier(0.3, 1, 0.35, 2) 0s;
-  transition: all 2s cubic-bezier(0.3, 1, 0.35, 2) 0s;
-}
-
-.hv-one {
-  position: relative;
-}
-.hv-one .hover-one::after,
-.hv-one .hover-one::before {
-  content: "";
-  background: var(--primary-color);
-  height: 0;
-  width: 0;
-  z-index: 1;
-  position: absolute;
-  opacity: 0.7;
-}
-.hv-one .hover-one::after {
-  z-index: 3;
-  bottom: 0;
-  left: 0;
-}
-.hv-one .hover-one::before {
-  z-index: 3;
-  right: 0;
-  top: 0;
-}
-.hv-one:hover .hover-one::after, .hv-one:hover .hover-one::before {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition-duration: 1.3s !important;
 }
 
 /*# sourceMappingURL=style.css.map */
