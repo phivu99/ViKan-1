@@ -62,6 +62,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@mixin flex-center {
+    display      : flex;
+    align-items  : center;
+    justify-content: center;
+}
+
 @mixin icon {
     width   : 50px;
     height  : 50px;
@@ -71,3 +77,4 @@
     bottom  : 0;
     position: absolute;
 }
+

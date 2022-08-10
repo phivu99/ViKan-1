@@ -310,6 +310,17 @@ label.error {
   align-items: center;
 }
 
+.flex-five {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
 .center,
 .text-center {
   text-align: center;
@@ -924,7 +935,7 @@ a:hover {
 }
 
 .heading-section {
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 .heading-section h5 {
   margin-bottom: 15px;

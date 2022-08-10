@@ -388,6 +388,17 @@ label.error {
     align-items: center;
 }
 
+.flex-five {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
 .center,
 .text-center {
     text-align: center;
@@ -985,7 +996,7 @@ a {
 
 // heading 
 .heading-section {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     h5 {
         margin-bottom: 15px;
         margin-left: 1px;
