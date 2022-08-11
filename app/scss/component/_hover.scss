@@ -70,6 +70,20 @@
     }
 } 
 
+.hover-img2 {
+    .img-style2 {
+        img {
+            width             : 100%;
+            @include transition3;
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+} 
+
 .hv-one {
     position: relative;
     .hover-one::after,

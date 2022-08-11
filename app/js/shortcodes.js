@@ -348,7 +348,7 @@
         });
     };
 
-    // (function () {
+
     var tfcountDown = function () {
         const second = 1000,
               minute = second * 60,
@@ -391,7 +391,40 @@
               }
               //seconds
             }, 0)
-        }();
+    }();
+
+
+    var btnQuantity = function () {
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+        
+            if (value > 0) {
+                value = value - 1;
+            } 
+        
+        $input.val(value);
+        
+        });
+        
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+        
+            if (value  > -1) {
+                value = value + 1;
+            } 
+        
+            $input.val(value);
+
+            // $this.closest('.quantity').find('.minus-btn').addClass("acti");
+            // $this.closest('.quantity').find('.input-text').addClass("acti");
+        });
+   }
 
 
     // Dom Ready
@@ -410,11 +443,13 @@
         no_link();
         flcustominput();
         // popupGallery();
+        btnQuantity();
         donatProgress();
         tabs();
         Preloader();
         activeMenuAndSmoothScroll();
         tfcountDown();
+        
     });
 
 })(jQuery);

@@ -353,7 +353,8 @@ label.error {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-family: 'Font Awesome 5 Pro';
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .swiper-button-next:after {
@@ -429,8 +430,8 @@ label.error {
 }
 
 .show-boder {
-    padding-bottom: 100px !important;
-    margin-bottom: -100px !important;
+    margin-top: -140px !important;
+    padding-top: 140px !important;
 }
 
 #wrapper {
@@ -475,6 +476,10 @@ button {
     font-weight: 600
 }
 
+.fw-7 {
+    font-weight: 700
+}
+
 .lh-28 {
     line-height: 28px
 }
@@ -504,6 +509,7 @@ a {
     cursor: pointer;
     display: inline-block;
     // display: inherit;
+    &:focus,
     &:hover {
         @include transition3;
         text-decoration: none;
@@ -574,6 +580,19 @@ a {
     &:hover {
         color: #ff9c00;
         text-decoration: none;
+        @include transition3;
+    }
+}
+
+.link-style-5 a {
+    text-decoration: none;
+    color: $color-2;
+    @include transition3;
+    &:focus,
+    &:hover {
+        color: $color-1;
+        text-decoration: none;
+        outline: 0;
         @include transition3;
     }
 }
@@ -698,7 +717,7 @@ a {
         left: 0;
         width: 100%;
         box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
-        z-index: 99999;
+        z-index: 999;
         background: var(--primary-color);
         border: none;
         opacity: 0;

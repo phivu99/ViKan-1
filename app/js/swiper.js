@@ -24,16 +24,6 @@ var swiper =  new Swiper(".mainslider", {
     },
 });
 
-// var swiper = new Swiper('.swiper-container', {
-//     pagination: {
-//       el: '.swiper-pagination2',
-//       clickable: true,
-//       renderBullet: function (index, className) {
-//         return '<span class="' + className + '">' + (index + 1) + '</span>';
-//       },
-//     },
-//   });
-
 var swiper =  new Swiper(".carousel", {
     // autoplay: {
     //     delay: 5000,
@@ -61,7 +51,36 @@ var swiper =  new Swiper(".carousel", {
             spaceBetween: 30,
         },
         1300: {
-            slidesPerView: 4,
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carousel-2", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 2,
             spaceBetween: 30,
         },
     },
