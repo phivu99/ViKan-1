@@ -6,10 +6,28 @@
   @media only screen and (max-width: 1650px) {
  
 
+    .slider {
+      .swiper-button-prev2 {
+        right: 170px;
+        left: unset;
+      }
+      .swiper-button-next2 {
+        right: 90px;
+        left: auto;
+      }
+      .swiper-pagination2 {
+        left: 15%;
+      }
+    }
+
   }
 
   @media only screen and (max-width: 1440px) {
-   
+    .slider {
+      .swiper-pagination2 {
+        left: 90px;
+      }
+    }
 
 
   }
@@ -43,24 +61,21 @@
       padding-left: 0;
     }
 
-    .slider.home2 {
-      .slider-item {
-        padding-bottom: 100px;
-        .content {
-          h1 {
-            padding-right: 50px;
-          }
-          p {
-            padding-right: 50px;
-          }
-        }
-        .image {
-          .info {
-            bottom: 0;
-          }
-        }
+    .slider {
+      .swiper-button-prev2 {
+        right: 95px;
+      }
+      .swiper-button-next2 {
+        right: 15px;
+      }
+      .swiper-pagination2 {
+        left: 15px;
+      }
+      .slider-item .content {
+        width: 62%;
       }
     }
+
 
 
   }
@@ -91,53 +106,17 @@
     .slider {
       .slider-item {
         position: relative;
-        padding: 80px 0 83px;
+        padding: 90px 0 90px;
         .content {
-          width: 60%;
+          width: 65%;
           padding-left: 0;
           p {
             padding: 0;
           }
         }
-        .image {
-          width: 40%;
-          margin-top: -30px;
-          .mark-1,
-          .icon-slider {
-            display: none;
-          }
-          .diagram {
-            left: 50%;
-            bottom: 20%;
-            transform: translateX(-50%);
-            margin-bottom: 5px;
-          }
-          .info {
-            bottom: 0%;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-        }
       }
     }
 
-    .slider.home2 .slider-item {
-      padding: 80px 0 90px;
-      .content {
-        .heading {
-          margin-bottom: 50px;
-        }
-        h1 {
-          padding: 0;
-          font-size: 48px;
-          line-height: 60px;
-        }
-        p {
-          padding: 0;
-        }
-      }
-    }
-    
     #footer {
       padding: 80px 0 50px;
       .widget-logo {
@@ -206,9 +185,13 @@
     //     }
     //   }
     // }
+    .flat-subscribe {
+      padding: 60px 0;
+    }
 
     .widget-subcribe {
       padding-left: 0;
+      padding-top: 40px;
       .form-subcribe {
         input {
           width: 70%;
@@ -218,6 +201,7 @@
         }
       }
     }
+    
 
     #top-bar {
       height: unset;
@@ -244,9 +228,109 @@
       .content {
         padding: 24px 15px 25px 15px;
       }
+      &.home {
+        padding-bottom: 50px;
+      }
     }
 
+    .flat-brand {
+      padding-bottom: 82px;
+    }
 
+    .flat-icon {
+      padding-bottom: 60px;
+      .box-icon {
+        margin-bottom: 30px;
+      }  
+    }
+    .flat-about {
+      .wrap-about .box-icon {
+        margin-right: 0;
+        padding: 15px 10px 19px 12px;
+        .icon {
+          margin-right: 15px;
+        }
+      }
+      .box-author {
+        width: 100%;
+        position: unset; 
+        padding: 20px 15px 25px;
+        border-radius: 5px;
+        height: unset;
+        margin-top: 15px;
+        .title {
+          margin-bottom: 10px;
+        }
+      }
+      .wrap-img .img-1 {
+        margin-bottom: 15px;
+      }
+    }
+
+    .flat-vegetables {
+      .flat-tabs .tab-title li {
+        margin-right: 18px;
+        margin-left: 18px;
+      }
+      .wrap-vegetables {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .box {
+          width: calc(50% - 30px);
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .flat-organic {
+      .box-organic {
+        .title {
+          font-size: 30px;
+          left: -100px;
+          top: 96px;
+        }
+        .images {
+          margin-left: 40px;
+          .content {
+            transform: translateY(-50%);
+            left: 20px;
+            top: 50%;
+          }
+        }
+        &.box-2 {
+          .images {
+            margin-right: 40px;
+          }
+          .title {
+            right: -73px;
+            left: unset;
+            top: 96px;
+          }
+        }
+      }
+  
+    }
+
+    .flat-arrivals .box-arrivals {
+      display: block;
+      .images {
+        margin-right: 0; 
+        width: 100%; 
+      }
+    }
+
+    .flat-testimonials {
+      padding-bottom: 80px;
+      .box-testi {
+        padding: 32px 15px 40px;
+      }
+    }
+  
+    .flat-brand .brand-slider {
+      text-align: center;
+    }
+ 
+  
  
 
 
@@ -320,7 +404,6 @@
         .content {
           width: 100%;
           .heading {
-            padding-right: 15px;
             h1 {
               font-size: 60px;
             }
@@ -333,6 +416,10 @@
           display: none;
         }
       }
+    }
+
+    .slider .img-slider img {
+      object-position: 0px 0;
     }
   
     #footer {
@@ -416,6 +503,7 @@
       }
     }
 
+  
     .widget-subcribe .form-subcribe {
       .form-submit {
         display: block;
@@ -430,6 +518,30 @@
         padding-bottom: 8px;
       }
     }
+
+    .flat-vegetables .flat-tabs {
+      .box-tab {
+        margin-bottom: 20px;
+      }
+      .tab-title {
+        flex-wrap: wrap;
+        li {
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-bottom: 10px;
+          .icon {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+ 
+
+    .flat-vegetables .wrap-vegetables .box {
+      width: calc(100% - 30px);
+    }
+
+        
 
  
 

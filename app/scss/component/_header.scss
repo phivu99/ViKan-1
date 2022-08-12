@@ -591,16 +591,22 @@ header {
             border-radius   : 10px; 
             line-height: 23px;
             padding: 13px 50px 13px 15px;
-        }
-        .search-field::placeholder {
-            color: #010C2A;
-            line-height: 26px;
-            font-size: 16px;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
+            margin: 3px;
+            &:focus {
+                border      : 1px solid $color-3;
+                width       : 99%;
+            }
+            &::placeholder {
+                color: #010C2A;
+                line-height: 26px;
+                font-size: 16px;
+            }
         }
         .search {
             position: absolute;
             right: 20px;
-            top: 15px;
+            top: 18px;
             border: none;
             background: transparent;
             i {

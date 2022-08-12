@@ -272,21 +272,6 @@ label.error {
   color: red;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.swiper-button-next:after {
-  content: "\f061";
-}
-
-.swiper-button-prev:after {
-  content: "\f060";
-}
-
 .flex {
   display: -webkit-box;
   display: -moz-box;
@@ -447,7 +432,7 @@ a:focus, a:hover {
 }
 .link-style-1 a {
   text-decoration: none;
-  color: var(--primary-color4);
+  color: #000;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -960,7 +945,7 @@ a:focus, a:hover {
 }
 
 .heading-section {
-  margin-bottom: 24px;
+  margin-bottom: 52px;
 }
 .heading-section h5 {
   margin-bottom: 15px;
@@ -973,9 +958,7 @@ a:focus, a:hover {
   text-transform: capitalize;
 }
 .heading-section.style {
-  margin-top: -3px;
-  margin-bottom: 49px;
-  padding: 0 30%;
+  margin-bottom: 24px;
 }
 
 .flat-im {

@@ -1,6 +1,22 @@
 @use '../abstracts/' as *;
 
 // swiper slider 
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.swiper-button-next:after {
+    content: "\f061";
+}
+
+.swiper-button-prev:after {
+    content: "\f060";
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     width: 50px;
@@ -38,14 +54,14 @@
     left : auto; 
 }
 
-.slider:hover .swiper-button-next,
-.slider:hover .swiper-button-prev {
-    opacity: 1;
-    @include transition3;
-    &.swiper-button-disabled {
-        opacity: 1;
-    }
-}
+// .slider:hover .swiper-button-next,
+// .slider:hover .swiper-button-prev {
+//     opacity: 1;
+//     @include transition3;
+//     &.swiper-button-disabled {
+//         opacity: 1;
+//     }
+// }
 
 // 2
 .slider .swiper-button-next2,
@@ -95,6 +111,7 @@
         padding: 218px 0 219px;
         .content {
             color: #fff;
+            width: 55%;
             .heading {
                 margin-bottom: 35px;
             }
@@ -189,7 +206,6 @@
     z-index: 9;
 }
 
-
 .slider .swiper-pagination-bullet {
     width: unset;
     height: unset;
@@ -230,5 +246,34 @@
             background-color: $color-3;
         }
     }
-    
+}
+
+.flat-testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 155px;
+}
+
+.flat-testimonials .swiper-pagination-bullet {
+    background: $color-3;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px !important;
+    opacity: 1;
+}
+
+.flat-testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $color-3 !important;
+    opacity: 1;
+       &::before {
+        @include transition3;
+        position: absolute;
+        transform: translate(-50%, -61%);
+        top: 50%;
+        border-radius: 50%;
+        content: "";
+        width : 19px;
+        height: 19px;
+        border: 1px solid $color-3;
+        overflow: visible;
+    }
 }

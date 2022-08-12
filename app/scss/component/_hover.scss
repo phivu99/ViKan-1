@@ -73,13 +73,29 @@
 .hover-img2 {
     .img-style2 {
         img {
+            @include transition3;
+        }
+    }
+    &:hover {
+        img {
+            transform:  scale(1.05) rotate(10deg);
+        }
+    }
+} 
+
+
+.hover-img3 {
+    .img-style3 {
+        overflow     : hidden; 
+        img {
             width             : 100%;
             @include transition3;
         }
     }
     &:hover {
         img {
-            transform: scale(1.05);
+            transform:  scale(1.075);
+            @include transition3;
         }
     }
 } 

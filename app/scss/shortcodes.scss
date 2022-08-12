@@ -1064,18 +1064,6 @@
     }
 }
 
-// flat brand
-.flat-brand {
-    background: #F6F7FA;
-    padding: 0px 0 87px;
-    .brand-slider {
-        .swiper-slide {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-    }
-}
-
 // flat contact
 .flat-contact {
     .image {
@@ -1139,71 +1127,6 @@
         }
     }
 }
-
-.mode_switcher {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    justify-content: center;
-    align-items: center;
-    a {
-        background: #343444;
-        border-radius: 10px;
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        font-size: 16px;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &.is_active {
-            background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
-        }
-        i {
-            margin-right: 5px;
-        }
-      }
-  }
-
-// .char {
-//     -webkit-animation:fadeInUp 
-//     .4s cubic-bezier(.3,0,.7,1) both;
-//     animation:fadeInUp .4s cubic-bezier(.3,0,.7,1) both;
-//     -webkit-animation-delay:calc(30ms*var(--char-index));
-// }
-// h3 .whitespace{width:10px} 
-// @-webkit-keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}
-// } 
-// @keyframes fadeInUp{0% { 
-//     opacity:0;
-//     transform:translateY(20px)
-// }to{opacity:1;transform:translateY(0)}}.splitting.txt.animated char{-webkit-animation:fadeIn .3s cubic-bezier(.3,0,.7,1) both;animation:fadeIn .3s cubic-bezier(.3,0,.7,1) both;-webkit-animation-delay:calc(10ms*var(--char-index));animation-delay:calc(10ms*var(--char-index))}
-
-// <div class="word">
-// <span class="char">W</span>
-// <span class="char">e</span>
-// <span class="char">b</span> Web Developer from NewYork
-// </div> 
-// <div class="whitespace">
-// <span class="char">W</span>
-// <span class="char">e</span>
-// <span class="char">b</span> Web Developer from NewYork
-// </div>
-
- // transition: all 0s;
- 
-// opacity: 1;
-// visibility: visible;
-// transform: translateY(0);
-//    .char {
-//         -webkit-animation: fadeInUp .5s cubic-bezier(.3,0,.7,1) both;
-//         animation: fadeInUp .5s cubic-bezier(.3,0,.7,1) both;
-//         -webkit-animation-delay: calc(60ms*var(--char-index));
-//         animation-delay: calc(60ms*var(--char-index));  
-//    } 
 
 
 

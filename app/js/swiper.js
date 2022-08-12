@@ -58,10 +58,10 @@ var swiper =  new Swiper(".carousel", {
 });
 
 var swiper =  new Swiper(".carousel-2", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -76,7 +76,7 @@ var swiper =  new Swiper(".carousel-2", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
         },
         991: {
@@ -91,28 +91,48 @@ var swiper =  new Swiper(".carousel-3", {
         delay: 6000,
         disableOnInteraction: false,
     },
-    slidesPerView: 3,   
+    slidesPerView: 2,   
     loop: true,
     spaceBetween: 30,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination3",
         clickable: true,
       },
     breakpoints: {
+        550: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
         768: {
-            slidesPerView: 5,
-            spaceBetween: 75,
+            slidesPerView: 4,
+            spaceBetween: 30,
         },
         991: {
             slidesPerView: 5,
-            spaceBetween: 100,
-        },
-        1200: {
-            slidesPerView: 6,
-            spaceBetween: 130,
+            spaceBetween: 52,
         },
     },
 });
 
+var swiper =  new Swiper(".carousel-4", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
 
 
