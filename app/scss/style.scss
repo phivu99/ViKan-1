@@ -447,7 +447,7 @@ button {
 }
 
 .font-2 {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
 }
 
 .fw-4 {
@@ -657,9 +657,7 @@ a {
         border-bottom-right-radius: 4px;
         // transform: rotateY(170deg);
         &:hover {
-            &.search-icon::after {
-                color: $color-1;
-            }
+            background: $color-3;
         }
 
         &.search-icon::after {

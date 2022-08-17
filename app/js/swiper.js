@@ -24,6 +24,27 @@ var swiper =  new Swiper(".mainslider", {
     },
 });
 
+var swiper =  new Swiper(".mainslider2", {
+    // autoplay: {
+    // delay: 8000,
+    // disableOnInteraction: false,
+    // },
+    slidesPerView: 1,
+    speed: 500,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
 var swiper =  new Swiper(".carousel", {
     // autoplay: {
     //     delay: 5000,
