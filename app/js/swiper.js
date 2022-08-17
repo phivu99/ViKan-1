@@ -58,10 +58,10 @@ var swiper =  new Swiper(".carousel", {
 });
 
 var swiper =  new Swiper(".carousel-2", {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,

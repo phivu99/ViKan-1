@@ -426,6 +426,75 @@
         });
    }
 
+   var dropdown = function(id){
+    var obj = $(id+'.dropdown');
+    var btn = obj.find('.btn-selector');
+    var dd = obj.find('ul');
+    var opt = dd.find('li');
+        dd.hide();
+        obj.on("mouseenter", function() {
+            dd.show();
+            dd.addClass('show');
+            $(this).css("z-index",1000);
+        }).on("mouseleave", function() {
+            dd.hide();
+             $(this).css("z-index","auto")
+             dd.removeClass('show');
+        })
+        
+        opt.on("click", function() {
+            dd.hide();
+            var txt = $(this).text();
+            opt.removeClass("active");
+            $(this).addClass("active");
+            btn.text(txt);
+        });
+    }
+
+     /*---categories slideToggle---*/
+    $(".categories_title").on("click", function() {
+        $(this).toggleClass('active');
+        $('.categories_menu_toggle').slideToggle('medium');
+    }); 
+
+    /*---widget sub categories---*/
+    $(".sub_categories1 > a").on("click", function() {
+        $(this).toggleClass('active');
+        $('.dropdown_categories1').slideToggle('medium');
+    }); 
+    
+    /*---widget sub categories---*/
+    $(".sub_categories2 > a").on("click", function() {
+        $(this).toggleClass('active');
+        $('.dropdown_categories2').slideToggle('medium');
+    }); 
+    
+    /*---widget sub categories---*/
+    $(".sub_categories3 > a").on("click", function() {
+        $(this).toggleClass('active');
+        $('.dropdown_categories3').slideToggle('medium');
+    }); 
+    
+    
+    /*----------  Category more toggle  ----------*/
+
+	$(".categories_menu_toggle li.hidden").hide();
+	   $("#more-btn").on('click', function (e) {
+
+		e.preventDefault();
+		$(".categories_menu_toggle li.hidden").toggle(500);
+		var htmlAfter = '<i class="fa fa-minus" aria-hidden="true"></i> Less Categories';
+		var htmlBefore = '<i class="fa fa-plus" aria-hidden="true"></i> More Categories';
+
+
+		if ($(this).html() == htmlBefore) {
+			$(this).html(htmlAfter);
+		} else {
+			$(this).html(htmlBefore);
+		}
+	});
+    
+
 
     // Dom Ready
     $(function () {
@@ -444,6 +513,8 @@
         flcustominput();
         // popupGallery();
         btnQuantity();
+        dropdown('#item_category');
+        dropdown('#item_category2');
         donatProgress();
         tabs();
         Preloader();
