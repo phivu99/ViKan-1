@@ -166,11 +166,11 @@
                 background-color: $color-1;
                 @include transition3;
             }
-            &:hover {
-                i {
-                    animation: 0.3s link-icon linear;
-                }
-            } 
+            // &:hover {
+            //     i {
+            //         animation: 0.3s link-icon linear;
+            //     }
+            // } 
         }
     }
 }
