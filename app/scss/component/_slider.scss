@@ -54,6 +54,44 @@
     left : auto; 
 }
 
+// flat special 
+
+.swiper-button-next4 {
+    right: 32px; 
+    left : auto; 
+}
+
+ .swiper-button-prev4 {
+    right: 86px; 
+    left : auto; 
+}
+
+.swiper-button-next4,
+.swiper-button-prev4 {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; 
+    top  : 14px;
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    @include transition3;
+    background: $color-1;
+    color: $color-6;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    @include flex-center;
+    &:hover,
+    &.swiper-button-disabled {
+        background: $color-3;
+        color: $color-1;
+        opacity: 1;
+    }
+    i {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
 // .slider:hover .swiper-button-next,
 // .slider:hover .swiper-button-prev {
 //     opacity: 1;
