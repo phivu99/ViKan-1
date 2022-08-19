@@ -167,7 +167,7 @@
                         injectSpace.hide();
                     }
 
-                    if ($(window).scrollTop() > 500) {
+                    if ($(window).scrollTop() > 1000) {
                         nav.addClass('is-small');
                     } else {
                         nav.removeClass('is-small');

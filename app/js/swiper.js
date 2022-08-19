@@ -178,11 +178,11 @@ var swiper =  new Swiper(".carousel-5", {
             slidesPerView: 2,
             spaceBetween: 30,
         },
-        1024: {
+        992: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        1300: {
+        1200: {
             slidesPerView: 5,
             spaceBetween: 20,
         },
@@ -218,6 +218,40 @@ var swiper =  new Swiper(".carousel-6", {
         1200: {
             slidesPerView: 5,
             slidesPerColumn: 2,
+            spaceBetween: 20,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carousel-7", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    loop:false,
+    slidesPerView: 1,
+    slidesPerColumn: 3,
+    slidesPerColumnFill: 'row',
+    spaceBetween: 20,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 1,
+            slidesPerColumn: 3,
             spaceBetween: 20,
         },
     },
