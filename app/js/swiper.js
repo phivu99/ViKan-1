@@ -257,4 +257,58 @@ var swiper =  new Swiper(".carousel-7", {
     },
 });
 
+var swiper =  new Swiper(".carousel-8", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carousel-9", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+    },
+});
+
 
