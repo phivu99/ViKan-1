@@ -117,12 +117,14 @@
                                         </ul>
                                     </nav><!-- /#main-nav -->   
                                     <div class="flat-button-top flex"> 
-                                        <div class="header-search flat-show-search" id="s1">
+                                        <div class="header-search flat-show-search flex" id="s1">
                                             <a href="#" class="show-search header-search-trigger">
                                                 <span class="icon-Vector"><i class="far fa-search"></i></span>
                                             </a>
-                                            
-                                            <a href="" class="menu-bar-right header-menu"><i class="fas fa-shopping-basket"></i></a>
+                                            <div class="cart-box">
+                                                <a href="#" class="cart"><i class="fas fa-shopping-basket"></i> </a>
+                                                <a href="#" class="cart-contents"><span>2</span> </a>
+                                            </div>
                                             <a href="#" class=""><i class="fas fa-user"></i></a>
                                             <div class="top-search">
                                                 <form action="#" method="get" role="search" class="search-form">
@@ -413,8 +415,6 @@
                                         <h6 class="days fw-4">10 June, 2022</h6>
                                     </div>
                                 </li>
-
-                                
                             </ul>
                         </div>
                     </div>
@@ -445,10 +445,23 @@
         <!-- Bottom -->
         </div>
         <!-- /#page -->
+
+        <div class="img-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+                </defs>
+            </svg>
+        </div>
+
     </div>
     <!-- /#wrapper -->
 
-    <a id="scroll-top" class="button-go"></a>
+    <!-- <a id="scroll-top" class="button-go"></a> -->
 
     <!-- Javascript -->
 
@@ -464,14 +477,4 @@
 </body>
 
 </html>
-<div class="img-svg">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-          </filter>
-        </defs>
-      </svg>
-</div>
+

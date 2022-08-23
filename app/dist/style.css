@@ -209,6 +209,14 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.p-18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
 /* Typography
 -------------------------------------------------------------- */
 h1,
@@ -543,6 +551,26 @@ a:focus, a:hover {
 }
 .link-style-6 a:focus, .link-style-6 a:hover {
   color: #45ab49;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link-style-7 a {
+  text-decoration: none;
+  color: #666666;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.link-style-7 a:focus, .link-style-7 a:hover {
+  color: #ff9c00;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;

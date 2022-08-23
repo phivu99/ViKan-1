@@ -245,8 +245,8 @@ var swiper =  new Swiper(".carousel-7", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 3,
-            slidesPerColumn: 2,
+            slidesPerView: 1,
+            slidesPerColumn: 3,
             spaceBetween: 20,
         },
         1200: {

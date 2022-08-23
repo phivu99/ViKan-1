@@ -283,6 +283,14 @@ p {
     font-family: $font-2;
 }
 
+.p-18 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-2;
+    font-family: $font-2;
+}
+
 /* Typography
 -------------------------------------------------------------- */
 
@@ -439,7 +447,6 @@ button {
 .title-30 {
     font-size: 30px;
     line-height: 40px;
-    
 }
 
 .font {
@@ -599,6 +606,20 @@ a {
         @include transition3;
     }
 }
+
+.link-style-7 a {
+    text-decoration: none;
+    color: $color-4;
+    @include transition3;
+    &:focus,
+    &:hover {
+        color: $color-3;
+        text-decoration: none;
+        outline: 0;
+        @include transition3;
+    }
+}
+
 
 
 
