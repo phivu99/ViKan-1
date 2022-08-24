@@ -67,6 +67,10 @@
   .header_1.home2 #main-nav {
     left: 27.5%;
   }
+
+  .side-bar {
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
   .flat-organic2 {
@@ -508,6 +512,43 @@
   .flat-brand .brand-slider {
     text-align: center;
   }
+
+  .flat-title-page.details .heading {
+    padding: 0;
+  }
+
+  .flat-blog-details .post .text-1 {
+    padding-right: 0px;
+  }
+  .flat-blog-details .post .box-text {
+    padding-right: 0px !important;
+  }
+  .flat-blog-details .post .image-one {
+    text-align: center;
+  }
+
+  .side-bar {
+    margin-top: 65px;
+  }
+  .side-bar .widget {
+    margin-bottom: 50px;
+  }
+  .side-bar .widget-author {
+    padding: 35px 15px 30px;
+  }
+  .side-bar .widget-categories {
+    padding: 33px 15px 35px;
+  }
+  .side-bar .widget-menu {
+    padding: 33px 15px 35px;
+  }
+  .side-bar .widget-tags {
+    padding: 33px 15px 19px;
+  }
+
+  #comments .buttons {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -625,19 +666,6 @@
 
   .swiper-pagination {
     display: none;
-  }
-
-  .side-bar {
-    margin-top: 55px;
-  }
-  .side-bar .widget.search {
-    margin-bottom: 40px;
-  }
-  .side-bar .widget .recent-news li .title-post {
-    padding-top: 10px;
-  }
-  .side-bar .widget.widget-categories {
-    margin-bottom: 36px;
   }
 
   .fancybox-slide--iframe .fancybox-content {
@@ -1020,6 +1048,54 @@
   }
   .flat-testimonial2 .button-custom-slider {
     display: none;
+  }
+
+  .flat-blog-details .post .box-text.style {
+    margin-bottom: 50px;
+  }
+  .flat-blog-details .post .box-item {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .flat-blog-details .post .quote-details {
+    padding: 54px 15px 24px;
+  }
+  .flat-blog-details .post .reply-box {
+    display: none;
+  }
+
+  #comments .comment-list {
+    margin-bottom: 40px;
+  }
+  #comments .comment-list .comment-01 {
+    padding: 29px 15px 26px;
+  }
+  #comments .comment-list .comment-01 .comment-avatar {
+    margin-bottom: 18px;
+  }
+  #comments .comment-list .comment-01 .comment-content .comment-text p {
+    padding: 0;
+  }
+  #comments .comment-form .style-text {
+    width: 100%;
+    float: unset;
+  }
+  #comments .comment-form fieldset.email-wrap,
+#comments .comment-form fieldset.name-wrap {
+    padding: 0px;
+  }
+
+  .side-bar {
+    margin-top: 55px;
+  }
+  .side-bar .widget {
+    margin-bottom: 40px;
+  }
+  .side-bar .widget-title.title-list {
+    margin-bottom: 20px;
+  }
+  .side-bar .widget-title.title-tags {
+    margin-bottom: 20px;
   }
 
   .po-content-one {
