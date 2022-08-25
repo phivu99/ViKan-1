@@ -386,6 +386,31 @@
 .blog-category-list {
     .post {
         padding-top: 6px;
+        .blog-box {
+            .content {
+                padding: 26px 30px;
+                .sub-box {
+                    .style-a {
+                        &::after {
+                            content: '/';
+                            color      : $color-2;
+                            line-height: normal;
+                            right: -2px;
+                            top: 5px;
+                            margin: 0 8.5px;
+                        }
+                        &:hover {
+                            color: $color-3;
+                            text-decoration: underline;
+                        }
+                    }
+                    .text-a {
+                        font-size: 18px;
+                       
+                    }
+                }
+            }
+        }
     }
 }
 

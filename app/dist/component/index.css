@@ -1498,6 +1498,24 @@ header {
 .blog-category-list .post {
   padding-top: 6px;
 }
+.blog-category-list .post .blog-box .content {
+  padding: 26px 30px;
+}
+.blog-category-list .post .blog-box .content .sub-box .style-a::after {
+  content: "/";
+  color: #000;
+  line-height: normal;
+  right: -2px;
+  top: 5px;
+  margin: 0 8.5px;
+}
+.blog-category-list .post .blog-box .content .sub-box .style-a:hover {
+  color: #ff9c00;
+  text-decoration: underline;
+}
+.blog-category-list .post .blog-box .content .sub-box .text-a {
+  font-size: 18px;
+}
 
 .flat-icon .box-icon {
   text-align: center;
