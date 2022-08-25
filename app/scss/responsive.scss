@@ -578,7 +578,6 @@
           }
         }
       }
-  
     }
 
     .flat-arrivals .box-arrivals {
@@ -643,6 +642,22 @@
     #comments {
       .buttons{
         text-align: center;
+      }
+    }
+
+    .blog-category-list {
+      padding-bottom: 75px;
+      .post {
+          padding-top: 0px;
+          .blog-box {
+            margin-bottom: 50px;
+          }
+      }
+      .themesflat-pagination {
+        text-align: center;
+      }
+      .side-bar {
+        margin-top: 55px;
       }
     }
  
@@ -888,10 +903,6 @@
         }
         .images { 
           margin-left: 0;
-          img {
-            object-position: 0px 0;
-            object-fit: none;
-          }
         }
       }
        .box-organic.box-2 .images {
@@ -924,6 +935,10 @@
       .wrap-img {
         padding-top: 0;
         margin-bottom: 30px;
+        text-align: center;
+        .box-author .inner{
+          justify-content: center;
+        }
       }
       .wrap-about .box-icon {
         align-items: center;
@@ -933,6 +948,7 @@
           margin-right: 12px;
         } 
       }
+      
       .buttons {
         text-align: center;
       }
@@ -1131,12 +1147,16 @@
     } 
 
     // home 3
+    .flat-fresh .box-organic {
+      display: flex;
+      justify-content: center;
+    }
     .flat-fresh.home3 {
       padding-bottom: 45px;
       .box-organic {
         margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
       }
     }
     .flat-special.home3 {
@@ -1273,6 +1293,19 @@
         margin-bottom: 20px;
       }
     }
+
+    .blog-category-list {
+      padding-bottom: 65px;
+      .post .blog-box .content {
+        padding: 31px 15px 35px 15px;
+        .meta-box {
+          display: block;
+          h4 {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
     // #comments {
     //   .respond-comment {
     //     padding: 40px 15px;
@@ -1372,6 +1405,13 @@
   //   // }
   
   // }
+  @media only screen and (max-width: 430px) {
+    .flat-organic .box-organic .images img {
+      object-position: 0px 0;
+      object-fit: none;
+    }
+  }
+ 
 
   @media only screen and (max-width: 360px) {
     .header-search i {

@@ -549,6 +549,22 @@
   #comments .buttons {
     text-align: center;
   }
+
+  .blog-category-list {
+    padding-bottom: 75px;
+  }
+  .blog-category-list .post {
+    padding-top: 0px;
+  }
+  .blog-category-list .post .blog-box {
+    margin-bottom: 50px;
+  }
+  .blog-category-list .themesflat-pagination {
+    text-align: center;
+  }
+  .blog-category-list .side-bar {
+    margin-top: 55px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -746,10 +762,6 @@
   .flat-organic .box-organic .images {
     margin-left: 0;
   }
-  .flat-organic .box-organic .images img {
-    object-position: 0px 0;
-    object-fit: none;
-  }
   .flat-organic .box-organic.box-2 .images {
     margin-right: 0;
   }
@@ -772,6 +784,10 @@
   .flat-about .wrap-img {
     padding-top: 0;
     margin-bottom: 30px;
+    text-align: center;
+  }
+  .flat-about .wrap-img .box-author .inner {
+    justify-content: center;
   }
   .flat-about .wrap-about .box-icon {
     align-items: center;
@@ -969,13 +985,16 @@
     padding: 27px 0px 27px 15px;
   }
 
+  .flat-fresh .box-organic {
+    display: flex;
+    justify-content: center;
+  }
+
   .flat-fresh.home3 {
     padding-bottom: 45px;
   }
   .flat-fresh.home3 .box-organic {
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
   }
 
   .flat-special.home3 .swiper-container {
@@ -1098,6 +1117,19 @@
     margin-bottom: 20px;
   }
 
+  .blog-category-list {
+    padding-bottom: 65px;
+  }
+  .blog-category-list .post .blog-box .content {
+    padding: 31px 15px 35px 15px;
+  }
+  .blog-category-list .post .blog-box .content .meta-box {
+    display: block;
+  }
+  .blog-category-list .post .blog-box .content .meta-box h4 {
+    margin-bottom: 3px;
+  }
+
   .po-content-one {
     order: 1;
   }
@@ -1108,6 +1140,12 @@
 
   .po-content-three {
     order: 3;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .flat-organic .box-organic .images img {
+    object-position: 0px 0;
+    object-fit: none;
   }
 }
 @media only screen and (max-width: 360px) {

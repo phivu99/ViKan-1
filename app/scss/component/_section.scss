@@ -381,32 +381,58 @@
 }
 
 .blog-category-list {
+    padding-bottom: 100px;
     .post {
         padding-top: 6px;
         .blog-box {
+            margin-bottom: 60px;
             .content {
-                padding: 26px 30px;
-                .sub-box {
+                padding: 26px 29px 31px 30px;
+                box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+                border-radius: 5px;
+                .meta-box {
+                    border-bottom: 1px solid #ecedeb;
+                    padding-bottom: 26px;
+                    margin-bottom: 20px;
+                }
+                .inner {
+                    padding-top: 2px;
                     .style-a {
+                        position: relative;
                         &::after {
                             content: '/';
                             color      : $color-2;
                             line-height: normal;
-                            right: -2px;
-                            top: 5px;
-                            margin: 0 8.5px;
+                            right      : -2px;
+                            top        : 5px;
+                            margin     : 0 8px;
                         }
-                        &:hover {
-                            color: $color-3;
-                            text-decoration: underline;
-                        }
+                    }
+                    span {
+                        @include transition3;
                     }
                     .text-a {
-                        font-size: 18px;                   
+                        font-size: 18px; 
+                        &:hover {
+                            span {
+                                color: $color-3;
+                                text-decoration: underline;
+                            }                      
+                        }                  
                     }
+                }
+                h3 {
+                    line-height: 46px;
+                    margin-bottom: 12px;
+                }
+                .texts {
+                    margin-bottom: 25px;
                 }
             }
         }
+    }
+    .themesflat-pagination {
+        margin: 0;
     }
 }
 
@@ -466,6 +492,18 @@
                         animation: sonarEffect2 1.3s ease-out 75ms;
                     }
                 }
+            }
+        }
+    }
+    &.page {
+        .row {
+            margin-right: 15px;
+        }
+        .box-icon {
+            padding: 49px 0px 25px;
+            .content h3 {
+                font-size: 24px;
+                margin-bottom: 21px;
             }
         }
     }
@@ -1042,6 +1080,14 @@
     background: url(./../../assets/images/section/bg-video.jpg)  center center no-repeat;
     background-size: cover;
     position: relative;
+    &.page {
+        background: url(./../../assets/images/section/bg-video-page.jpg)  center center no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        .heading-section {
+            margin-bottom: 13px;
+        }
+    }
 }
 
 // video
@@ -2029,3 +2075,138 @@
         right: 69px;
     }
 }
+
+// page about
+.flat-our {
+    background: $bg-color;
+    .box {
+        background: $color-1;
+        padding: 46px 40px;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        box-shadow: 0px 18px 24px rgb(0 0 0 / 14%);
+        &:hover {
+            &::after {
+                bottom: 6px;
+                left  : 16px;
+                transform: scale(25);
+                @include transition3;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 6px;
+            left: 16px;
+            background: #ff9c00;
+            height: 9px;
+            width: 9px;
+            border-radius: 48%;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            transition: transform 0.25s ease-out;
+            z-index: -1;
+        }
+        .title {
+            margin-bottom: 14px;
+        }
+        p {
+            margin-bottom: 24px;
+        }
+        &.box-2 {
+            h4 {
+                margin-bottom: 23px;
+            }
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.flat-count {
+    background: url(./../../assets/images/section/bg-counter.jpg)  center center no-repeat;
+    background-size: cover;
+    color: $color-1;
+    padding: 110px 0 95px;
+    position: relative;
+    .counter-box {
+        position      : relative;
+        padding-top: 1px;
+        .number {
+            font-size    : 52px;
+            font-weight  : 600;
+            margin-bottom: 26px;
+           
+            text-align: center;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .number-style {
+            counter-reset: v2 var(--v2);
+          }
+          
+        .number-style.number-one::after {
+              content:  "," counter(v2);
+        }
+    }
+    
+}
+@property --v2 {
+    syntax: "<integer>";
+    initial-value: 544;
+    inherits: true;
+}
+
+.flat-about.page {
+    background: unset;
+    padding-bottom: 78px;
+    .wrap-about {
+        padding-top: 9px;
+        .heading-section p {
+            padding-left: 1px;
+            padding-right: 15px;
+        }
+        .box-icon {
+            margin-bottom: 34px;
+        }
+    }
+    .wrap-img {
+        padding: 0;
+        .images {
+            border-radius: 50%;
+            width: 343px;
+            height: 343px;
+            display: inline-block;
+            overflow: hidden;
+            box-shadow: 0px 4px 40px rgb(0 0 0 / 8%);
+            border: 11px solid #fff;
+            z-index: 1;
+            &.image-1 {
+                margin-right: 40px;
+            }
+            &.image-2 {
+                margin-top: -126px;
+                margin-left: 117px;
+                position: relative;
+                width: 357px;
+                height: 357px;
+            }
+            img {
+                object-fit: none;
+            }
+        }
+        .mark-image {
+            position: absolute;
+            top: 29%;
+            right: -12px;
+            z-index: 0;
+        }
+    }
+    
+}
+
+
