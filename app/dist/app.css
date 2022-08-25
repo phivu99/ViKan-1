@@ -1286,8 +1286,7 @@ header {
   background-color: #0b1a00;
 }
 .flat-subscribe.home3 {
-  background-image: url(/assets/images/section/bg-subscribe.jpg);
-  background-repeat: no-repeat;
+  background: url(./../../assets/images/section/bg-subscribe.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -1974,8 +1973,7 @@ header {
 }
 
 .flat-sale {
-  background-image: url(/assets/images/section/bg-sale.jpg);
-  background-repeat: no-repeat;
+  background: url(./../../assets/images/section/bg-sale.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -2010,8 +2008,7 @@ header {
 }
 
 .flat-sale2 {
-  background-image: url(/assets/images/section/bg-sale2.jpg);
-  background-repeat: no-repeat;
+  background: url(./../../assets/images/section/bg-sale2.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -2024,9 +2021,8 @@ header {
 }
 
 .flat-sale3 {
-  background-image: url(/assets/images/section/bg-sale3.jpg);
+  background: url(./../../assets/images/section/bg-sale3.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   padding: 144px 0 151px;
 }
 .flat-sale3 .overlay {
@@ -2153,9 +2149,8 @@ header {
 .flat-video {
   padding-top: 144px;
   padding-bottom: 150px;
-  background-image: url(/assets/images/section/bg-video.jpg);
+  background: url(./../../assets/images/section/bg-video.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -2394,13 +2389,11 @@ header {
 }
 
 .flat-testimonials {
-  background-position: center;
-  background-attachment: fixed;
+  background: url(./../../assets/images/section/bg-testimonials.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: block;
   position: relative;
-  background-image: url(/assets/images/section/bg-testimonials.jpg);
   padding-bottom: 94px;
 }
 .flat-testimonials .overlay {
@@ -2757,9 +2750,8 @@ header {
 }
 
 .flat-days .wrap-days {
-  background-image: url(/assets/images/section/bg-days.jpg);
+  background: url(./../../assets/images/section/bg-days.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   padding: 66px 30px 72px;
   margin-bottom: 30px;
@@ -3086,9 +3078,8 @@ header {
   letter-spacing: -0.2px;
 }
 .flat-testimonial2 .wrap-testi .box-2 {
-  background-image: url(/assets/images/img-box/testimonial-1.jpg);
+  background: url(./../../assets/images/img-box/testimonial-1.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   width: 31.7%;
   padding: 95px 30px 0;
 }
