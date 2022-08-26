@@ -215,16 +215,6 @@
   animation: sonarEffect4 1.3s ease-out 75ms;
 }
 
-.is_dark .flat-service {
-  background: #180D45;
-}
-.is_dark .flat-service .heading-section h5 {
-  color: #FABE3C;
-}
-.is_dark .flat-service .heading-section h2 {
-  color: var(--primary-color);
-}
-
 @keyframes sonarEffect3 {
   0% {
     opacity: 0.3;

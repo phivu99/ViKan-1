@@ -419,6 +419,11 @@ label.error {
     text-transform: uppercase;
 }
 
+.text-unset {
+    text-transform: unset !important;
+}
+
+
 .align {
     align-items: center;
 }

@@ -106,11 +106,6 @@
 }
 
 
-// flat blog standard 
-    
-
-
-
 // flat-service 
 .flat-service {
     background: #F6F7FA;
@@ -246,19 +241,7 @@
     }
 }
 
-.is_dark {
-    .flat-service {
-        background: $bg-h2;
-        .heading-section {
-            h5 {
-                color: $color-h2;
-            }
-            h2 {
-                color: var(--primary-color);
-            }
-        }
-    }
-}
+
 
 
 @keyframes sonarEffect3 {

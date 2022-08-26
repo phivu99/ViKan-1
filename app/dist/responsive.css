@@ -68,6 +68,20 @@
     left: 27.5%;
   }
 
+  .flat-icon.page2 .box-icon.box-1 {
+    padding-right: 0;
+  }
+  .flat-icon.page2 .box-icon.box-2, .flat-icon.page2 .box-icon.box-3 {
+    padding-left: 0;
+  }
+  .flat-icon.page2 .box-icon .content p {
+    padding: 0;
+  }
+
+  .flat-icon.page .row {
+    margin-right: -15px;
+  }
+
   .side-bar {
     padding: 0;
   }
@@ -432,6 +446,9 @@
   .flat-icon .box-icon {
     margin-bottom: 30px;
   }
+  .flat-icon .box-icon .content p {
+    padding: 0 15px;
+  }
 
   .flat-about .wrap-about .box-icon {
     margin-right: 0;
@@ -564,6 +581,59 @@
   }
   .blog-category-list .side-bar {
     margin-top: 55px;
+  }
+
+  .flat-our .box {
+    padding: 40px 15px;
+  }
+
+  .flat-count {
+    padding: 105px 0 90px;
+  }
+
+  .flat-about.page .wrap-img {
+    margin-bottom: 0;
+  }
+  .flat-about.page .wrap-img .images {
+    width: unset;
+    height: unset;
+  }
+  .flat-about.page .wrap-img .images.image-1 {
+    margin-right: 0px;
+  }
+  .flat-about.page .wrap-img .images.image-2 {
+    margin-top: -126px;
+    margin-left: 0;
+    width: unset;
+    height: unset;
+  }
+
+  .flat-about.page {
+    padding-bottom: 56px;
+  }
+
+  .flat-video-page {
+    padding-top: 0;
+  }
+  .flat-video-page .flat-video.page {
+    padding: 110px 0;
+  }
+
+  .flat-team {
+    padding-bottom: 75px;
+  }
+  .flat-team .box-team .images img {
+    width: 100%;
+  }
+
+  .flat-icon.page2 {
+    padding-bottom: 50px;
+  }
+  .flat-icon.page2 .heading-section {
+    margin-bottom: 50px;
+  }
+  .flat-icon.page2 .heading-section p {
+    padding: 0 110px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1128,6 +1198,53 @@
   }
   .blog-category-list .post .blog-box .content .meta-box h4 {
     margin-bottom: 3px;
+  }
+
+  .flat-our {
+    padding-bottom: 45px;
+  }
+  .flat-our .box {
+    margin-bottom: 30px;
+  }
+
+  .flat-count {
+    padding: 95px 0 35px;
+  }
+  .flat-count .themes-count {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flat-count .counter-box {
+    margin: 0 20px 45px;
+  }
+
+  .flat-about.page {
+    padding-bottom: 70px;
+  }
+
+  .flat-icon.page {
+    padding-bottom: 0;
+  }
+
+  .flat-video-page {
+    padding-top: 45px;
+  }
+  .flat-video-page .flat-video.page {
+    padding: 90px 0;
+  }
+
+  .flat-team .box-team .images {
+    margin: 15px;
+  }
+
+  .flat-icon.page2 {
+    padding-bottom: 20px;
+  }
+  .flat-icon.page2 .heading-section {
+    margin-bottom: 40px;
+  }
+  .flat-icon.page2 .heading-section p {
+    padding: 0;
   }
 
   .po-content-one {

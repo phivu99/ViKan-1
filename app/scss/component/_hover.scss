@@ -149,6 +149,14 @@
             transform-origin: top bottom;
             transition: transform 500ms ease;
         }
+        &.hv-2::before {
+            background: rgb(86,169,24,0.95);
+            mix-blend-mode: multiply;
+            transform-origin: center;
+            transform: scale(0, 0);
+            // background: #49851b;
+            // opacity: 0.85;
+        }
     }  
     &:hover .hover-style::before {
         transform: scale(1, 1);
