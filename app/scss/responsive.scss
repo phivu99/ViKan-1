@@ -19,6 +19,9 @@
         left: 15%;
       }
     }
+    .flat-skills .box-1 {
+      padding-left: 14%;
+    }
 
   }
 
@@ -35,7 +38,9 @@
     .swiper-button-next3 {
       right: 30px;
     }
-
+    .flat-skills .box-1 {
+      padding-left: 10%;
+    }
 
   }
 
@@ -44,6 +49,9 @@
     // .header_1 #main-nav {
     //   left: 26%;
     // }
+    .flat-skills .box-1 {
+      padding-left: 15px;
+    }
 
   }
 
@@ -109,6 +117,15 @@
 
     .side-bar {
       padding: 0;
+    }
+
+    .flat-food-services .wrap-services .box {
+      &.box-2 {
+        width: 33%;
+      }
+      &.box-3 {
+        margin-left: 0;
+      }
     }
 
 
@@ -730,6 +747,47 @@
       }
     }
 
+    .flat-services {
+      padding-bottom: 60px;
+      .heading-section {
+        padding: 0;
+      }
+    }
+
+    .flat-food-services .wrap-services .box {
+      &.box-1 {
+        width: 50%;
+      }
+      &.box-2 {
+        display: none;
+      }
+      &.box-3 .texts {
+        padding: 70px 50px 100px;
+      }
+    }
+
+    .flat-skills {
+      padding-bottom: 90px;
+      .box-1 {
+        width: 70%;
+        padding: 90px 10px 90px 15px;
+      }
+      .box-2 {
+        width: 30%;
+      }
+      .progress-box1 {
+        margin-right: 15px;
+        width: 34%;
+      }
+    }
+
+    .flat-icon.page.style {
+      padding-bottom: 50px;
+    }
+
+    .flat-video-page.style {
+      padding-bottom: 90px;
+    }
 
    
     
@@ -1426,7 +1484,58 @@
         }
       }
     }
+
+    .flat-services {
+      padding-bottom: 40px;
+      .box {
+        display: block;
+        .content {
+          padding: 40px 15px;
+        }
+      }
+    }
+
+    .flat-food-services {
+      .wrap-services {
+        display: block;
+        .box.box-1 {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+      }
+    }
+ 
+    .flat-skills {
+      .wrap-progress {
+        text-align: center;
+        justify-content: center;
+        // flex-wrap: wrap;
+      }
+      .box-1 {
+        width: 100%;
+        padding: 75px 10px 75px 15px;
+      }
+      .box-2 {
+        display: none;
+      }
+      .progress-box1 {
+        width: 50%;
+      }
+      .progress-box2 {
+        width: 50%;
+      }
+    }
+
+    .flat-icon.page.style {
+      padding-bottom: 25px;
+    }
+    .flat-video-page.style {
+      padding-top: 0px;
+    }
   
+    .flat-video-page.style {
+      padding-bottom: 75px;
+    }
   
   
   
@@ -1524,6 +1633,17 @@
     .flat-organic .box-organic .images img {
       object-position: 0px 0;
       object-fit: none;
+    }
+    .flat-skills .wrap-progress {
+      flex-wrap: wrap;
+      .progress-box1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px;
+      }
+      .progress-box2 {
+        width: 100%;
+      }
     }
   }
  

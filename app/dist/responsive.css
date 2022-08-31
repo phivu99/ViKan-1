@@ -12,6 +12,10 @@
   .slider .swiper-pagination2 {
     left: 15%;
   }
+
+  .flat-skills .box-1 {
+    padding-left: 14%;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .slider .swiper-pagination2 {
@@ -24,6 +28,15 @@
 
   .swiper-button-next3 {
     right: 30px;
+  }
+
+  .flat-skills .box-1 {
+    padding-left: 10%;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .flat-skills .box-1 {
+    padding-left: 15px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -84,6 +97,13 @@
 
   .side-bar {
     padding: 0;
+  }
+
+  .flat-food-services .wrap-services .box.box-2 {
+    width: 33%;
+  }
+  .flat-food-services .wrap-services .box.box-3 {
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -634,6 +654,46 @@
   }
   .flat-icon.page2 .heading-section p {
     padding: 0 110px;
+  }
+
+  .flat-services {
+    padding-bottom: 60px;
+  }
+  .flat-services .heading-section {
+    padding: 0;
+  }
+
+  .flat-food-services .wrap-services .box.box-1 {
+    width: 50%;
+  }
+  .flat-food-services .wrap-services .box.box-2 {
+    display: none;
+  }
+  .flat-food-services .wrap-services .box.box-3 .texts {
+    padding: 70px 50px 100px;
+  }
+
+  .flat-skills {
+    padding-bottom: 90px;
+  }
+  .flat-skills .box-1 {
+    width: 70%;
+    padding: 90px 10px 90px 15px;
+  }
+  .flat-skills .box-2 {
+    width: 30%;
+  }
+  .flat-skills .progress-box1 {
+    margin-right: 15px;
+    width: 34%;
+  }
+
+  .flat-icon.page.style {
+    padding-bottom: 50px;
+  }
+
+  .flat-video-page.style {
+    padding-bottom: 90px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1247,6 +1307,54 @@
     padding: 0;
   }
 
+  .flat-services {
+    padding-bottom: 40px;
+  }
+  .flat-services .box {
+    display: block;
+  }
+  .flat-services .box .content {
+    padding: 40px 15px;
+  }
+
+  .flat-food-services .wrap-services {
+    display: block;
+  }
+  .flat-food-services .wrap-services .box.box-1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .flat-skills .wrap-progress {
+    text-align: center;
+    justify-content: center;
+  }
+  .flat-skills .box-1 {
+    width: 100%;
+    padding: 75px 10px 75px 15px;
+  }
+  .flat-skills .box-2 {
+    display: none;
+  }
+  .flat-skills .progress-box1 {
+    width: 50%;
+  }
+  .flat-skills .progress-box2 {
+    width: 50%;
+  }
+
+  .flat-icon.page.style {
+    padding-bottom: 25px;
+  }
+
+  .flat-video-page.style {
+    padding-top: 0px;
+  }
+
+  .flat-video-page.style {
+    padding-bottom: 75px;
+  }
+
   .po-content-one {
     order: 1;
   }
@@ -1263,6 +1371,18 @@
   .flat-organic .box-organic .images img {
     object-position: 0px 0;
     object-fit: none;
+  }
+
+  .flat-skills .wrap-progress {
+    flex-wrap: wrap;
+  }
+  .flat-skills .wrap-progress .progress-box1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+  .flat-skills .wrap-progress .progress-box2 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 360px) {

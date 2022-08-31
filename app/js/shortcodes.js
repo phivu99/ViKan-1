@@ -210,16 +210,16 @@
         $('.couter').appear(function () {
             $('.chart').easyPieChart({
                 easing: 'easeOut',
-                lineWidth: 5,
-                size: 110,
+                lineWidth: 8,
+                size: 130,
                 scaleColor: false,
-                barColor: '#C297654D',
-                trackColor: '#F6F6F6',
+                barColor: '#fff',
+                trackColor: '#fb7620',
                 animate: 5000,
                 onStep: function (from, to, percent) {
                     $(this.el).find('.percent').text(Math.round(percent));
                 },
-                rotate: 275,
+                rotate: 45,
             });
 
         }, {

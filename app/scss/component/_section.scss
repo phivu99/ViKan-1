@@ -2388,4 +2388,148 @@
     }
 }
 
+.flat-food-services {
+    .heading-section {
+        margin-bottom: 46px;
+    }
+    .wrap-services {
+        .box {
+            flex: none;
+            &.box-1 {
+                height: 445px;
+                overflow: auto;
+                width: 34.9%;
+                margin-right: 20px;
+               
+                &::-webkit-scrollbar {
+                    width: 12px;
+                    height: 50px;
+                    padding-right: 10px;
+                }
+                &::-webkit-scrollbar-track { 
+                    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+                    -webkit-border-radius: 10px;
+                    border: 1px solid $color-3;
+                    border-radius: 10px;
+                }
+                 
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;
+                    background: $color-3;
+                }
+            }
+      
+            
+            .inner {
+                padding-right: 25px;
+                margin-bottom: 22px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .icon {
+                width: 86px;
+                height: 86px;
+                margin-right: 23px;
+                margin-top: 6px;
+                border: 1px solid $color-6;
+                border-style: dashed;
+                @include flex-center;
+                border-radius: 50%;
+                flex: none;
+            }
+            h3 {
+                margin-bottom: 9px;
+            }
+
+            &.box-3 {
+                margin-left: 19px;
+                flex: unset;
+                .texts {
+                    padding: 0 1px;
+                    background: url(./../../assets/images/img-box/food-service-2.png) center center no-repeat;
+                    margin: -1px;
+                    padding: 50px 40px 90px;
+                }
+            }        
+        }
+    }
+}
+
+.flat-skills {
+    padding-bottom: 110px;
+    .box-1 {
+        background: url(./../../assets/images/section/bg-skill-3.jpg) center center no-repeat;
+        background-size: cover;
+        width: 53.2%;
+        padding: 104px 0;
+        padding-left: 20%;
+        color: $color-1;
+    }
+    .box-2 {
+        background: url(./../../assets/images/section/bg-skill-2.jpg) center center no-repeat;
+        background-size: cover;
+        width: 46.8%;
+        flex: none;
+    }
+        /* circle progress */
+    .wrap-progress {
+        text-align: center;
+    }
+    .progress-box1 {
+        // margin-left: 23px;
+        margin-right: 58px;
+        width: 26%;
+    }
+
+    .progress-box2 {
+        width: 34.5%;
+        text-align: center;
+    }
+
+    .progress-skill .couter2 .chart2,
+    .progress-skill .couter .chart {
+        position: relative;
+        display: inline-block;
+    }
+
+    .progress-skill {
+        margin-bottom: 9px;
+        text-align: center;
+    }
+
+    .progress-skill .couter2 .chart2 span.percent2,
+    .progress-skill .couter .chart span.percent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .progress-skill .couter2 .chart2 span.percent2 {
+        color: var(--primary-color3);
+    }
+
+    .progress-skill .couter2 .chart2 span.percent2::after,
+    .progress-skill .couter .chart span.percent::after {
+        content: "%";
+    }
+}
+
+.flat-icon.page.style {
+    padding-bottom: 106px;
+    .row {
+        margin-right: -15px;
+    }
+}
+
+.flat-video-page.style {
+    padding-bottom: 110px;
+}
+
 

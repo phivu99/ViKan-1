@@ -3488,6 +3488,135 @@ header {
   z-index: -1;
 }
 
+.flat-food-services .heading-section {
+  margin-bottom: 46px;
+}
+.flat-food-services .wrap-services .box {
+  flex: none;
+}
+.flat-food-services .wrap-services .box.box-1 {
+  height: 445px;
+  overflow: auto;
+  width: 34.9%;
+  margin-right: 20px;
+  /* Handle */
+}
+.flat-food-services .wrap-services .box.box-1::-webkit-scrollbar {
+  width: 12px;
+  height: 50px;
+  padding-right: 10px;
+}
+.flat-food-services .wrap-services .box.box-1::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border: 1px solid #ff9c00;
+  border-radius: 10px;
+}
+.flat-food-services .wrap-services .box.box-1::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ff9c00;
+}
+.flat-food-services .wrap-services .box .inner {
+  padding-right: 25px;
+  margin-bottom: 22px;
+}
+.flat-food-services .wrap-services .box .inner:last-child {
+  margin-bottom: 0;
+}
+.flat-food-services .wrap-services .box .icon {
+  width: 86px;
+  height: 86px;
+  margin-right: 23px;
+  margin-top: 6px;
+  border: 1px solid #45ab49;
+  border-style: dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex: none;
+}
+.flat-food-services .wrap-services .box h3 {
+  margin-bottom: 9px;
+}
+.flat-food-services .wrap-services .box.box-3 {
+  margin-left: 19px;
+  flex: unset;
+}
+.flat-food-services .wrap-services .box.box-3 .texts {
+  padding: 0 1px;
+  background: url(./../../assets/images/img-box/food-service-2.png) center center no-repeat;
+  margin: -1px;
+  padding: 50px 40px 90px;
+}
+
+.flat-skills {
+  padding-bottom: 110px;
+  /* circle progress */
+}
+.flat-skills .box-1 {
+  background: url(./../../assets/images/section/bg-skill-3.jpg) center center no-repeat;
+  background-size: cover;
+  width: 53.2%;
+  padding: 104px 0;
+  padding-left: 20%;
+  color: #fff;
+}
+.flat-skills .box-2 {
+  background: url(./../../assets/images/section/bg-skill-2.jpg) center center no-repeat;
+  background-size: cover;
+  width: 46.8%;
+  flex: none;
+}
+.flat-skills .wrap-progress {
+  text-align: center;
+}
+.flat-skills .progress-box1 {
+  margin-right: 58px;
+  width: 26%;
+}
+.flat-skills .progress-box2 {
+  width: 34.5%;
+  text-align: center;
+}
+.flat-skills .progress-skill .couter2 .chart2,
+.flat-skills .progress-skill .couter .chart {
+  position: relative;
+  display: inline-block;
+}
+.flat-skills .progress-skill {
+  margin-bottom: 9px;
+  text-align: center;
+}
+.flat-skills .progress-skill .couter2 .chart2 span.percent2,
+.flat-skills .progress-skill .couter .chart span.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 600;
+  display: inline-block;
+}
+.flat-skills .progress-skill .couter2 .chart2 span.percent2 {
+  color: var(--primary-color3);
+}
+.flat-skills .progress-skill .couter2 .chart2 span.percent2::after,
+.flat-skills .progress-skill .couter .chart span.percent::after {
+  content: "%";
+}
+
+.flat-icon.page.style {
+  padding-bottom: 106px;
+}
+.flat-icon.page.style .row {
+  margin-right: -15px;
+}
+
+.flat-video-page.style {
+  padding-bottom: 110px;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
