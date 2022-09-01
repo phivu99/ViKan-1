@@ -532,50 +532,7 @@
         padding-left: 239px;
         padding-right: 239px;
     }
-    .flat-accordion {
-        .flat-toggle {
-            border-top: 1px solid var(--primary-color5);
-            border-bottom: unset;
-            &:last-child {
-                border-bottom: 1px solid var(--primary-color5);
-            }
-            .toggle-title {
-                padding: 20px 7px 20px 1px;
-                font-size: 24px;
-                line-height: 30px;
-                font-weight: 600;
-                cursor          : pointer;
-                text-transform  : capitalize;
-                .btn-toggle {
-                    float: right;
-                    margin-top : -2px;
-                    &::after {
-                        content    : '\f067';
-                        font-family: "Font Awesome 5 Pro";
-                        font-weight: 500;
-                        color      : var(--primary-color2);
-                        font-size  : 18px;                   
-                    }
-                }
-                &.active {
-                    .btn-toggle::after {
-                        color      : var(--primary-color2);
-                        content    : '\f068';
-                    }
-                } 
-            }
-            .toggle-content {
-                padding: 0px 70px 23px 2px;
-                display         : none;
-              
-                margin-top: -15px;
-                p {
-                    font-size: 18px;
-                    line-height: 28px;                
-                }
-            }
-        }
-    }
+
 }
 
 // flat skill

@@ -1142,5 +1142,65 @@ a {
     min-width: 100px;
 }
 
+// up load 01
+.btn-upload {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    display: flex !important;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    background: $color-6;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    &::before {
+        content: '\f1c1';
+        font-family: "Font Awesome 5 Pro";
+        font-size: 22px;
+        @include transition3;
+        color: #fff;
+        position: absolute;
+        right: 19px;
+        font-weight: 600;
+    }
+    // &::after {
+    //     content: '80kb';
+    //     font-family: 'Open Sans';
+    //     font-size: 12px;
+    //     font-weight: 400;
+    //     position: absolute;
+    //     right: 19px;
+    // }
+    // &.style-up {
+    //     background: var(--primary-color3);
+    //     &::before {
+    //         content: '\f1c1';
+    //     }
+    // }
+}
+
+.uploadFile {
+    position: relative;
+    #filename2,
+    #filename {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        opacity: 0;
+    }
+}
+
+
 
 

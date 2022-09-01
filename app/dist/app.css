@@ -1130,6 +1130,20 @@ header {
   background: #45ab49;
 }
 
+.blob-btn.btn-2 {
+  background-color: #ff9c00;
+  color: #45ab49;
+}
+.blob-btn.btn-2 .blob-btn__inner {
+  background: #fff;
+}
+.blob-btn.btn-2 .blob-btn__blob {
+  background: #ff9c00;
+}
+.blob-btn.btn-2:hover {
+  color: #fff;
+}
+
 .img-svg {
   display: none;
 }
@@ -2494,6 +2508,15 @@ header {
 .flat-gallery .content .button-box a:hover {
   background: #ff9c00;
 }
+.flat-gallery .wrap {
+  margin-left: -30px;
+  flex-wrap: wrap;
+}
+.flat-gallery .wrap .box-gallery {
+  width: calc(33.333333% - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 
 .flat-testimonials {
   background: url(./../../assets/images/section/bg-testimonials.jpg) center center no-repeat;
@@ -3615,6 +3638,181 @@ header {
 
 .flat-video-page.style {
   padding-bottom: 110px;
+}
+
+.flat-service-details {
+  padding-bottom: 104px;
+}
+.flat-service-details .side-bar {
+  padding: 0px 30px 0 0px;
+}
+.flat-service-details .side-bar .widget {
+  border-radius: 5px;
+}
+.flat-service-details .side-bar .widget-categories {
+  margin-bottom: 40px;
+}
+.flat-service-details .side-bar .widget-up {
+  padding: 23px 20px 20px;
+  margin-bottom: 32px;
+}
+.flat-service-details .side-bar .widget-up .title-up {
+  margin-bottom: 20px;
+}
+.flat-service-details .side-bar .widget-contact {
+  padding: 24px 21px 25px;
+  background: #ff9c00;
+  color: #fff;
+}
+.flat-service-details .side-bar .widget-contact .box-phone {
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #fff;
+}
+.flat-service-details .post .image-1 {
+  margin-bottom: 37px;
+}
+.flat-service-details .post .title-1 {
+  margin-bottom: 31px;
+}
+.flat-service-details .post .text-1 {
+  margin-bottom: 26px;
+}
+.flat-service-details .post .text-2 {
+  margin-bottom: 34px;
+}
+.flat-service-details .post .title-3 {
+  margin-bottom: 30px;
+}
+.flat-service-details .post .text-3 {
+  margin-bottom: 32px;
+}
+.flat-service-details .post .text-4 {
+  margin-bottom: 38px;
+}
+.flat-service-details .post .check {
+  margin-bottom: 46px;
+}
+.flat-service-details .post .check li {
+  margin-bottom: 8px;
+}
+.flat-service-details .post .check li:last-child {
+  margin-bottom: 0;
+}
+.flat-service-details .post .check li p::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  font-weight: 600;
+  color: #45ab49;
+  margin-right: 11px;
+}
+.flat-service-details .post .get-contact {
+  color: #fff;
+  background: #45ab49;
+  border-top-right-radius: 60px;
+}
+.flat-service-details .post .get-contact .content {
+  margin-top: -4px;
+  padding: 30px 0 30px 20px;
+}
+.flat-service-details .post .get-contact .content h5 {
+  margin-bottom: 7px;
+  letter-spacing: 0.1px;
+}
+.flat-service-details .post .get-contact .content h3 {
+  margin-bottom: 13px;
+  letter-spacing: 0.2px;
+}
+.flat-service-details .post .flat-video.page {
+  background: url(./../../assets/images/section/bg-video-service.jpg) center center no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 162px 0;
+  margin-bottom: 35px;
+}
+.flat-service-details .post .flat-video.page a {
+  background: transparent;
+  border: 2px solid #fff;
+  width: 78px;
+  height: 78px;
+}
+.flat-service-details .post .flat-video.page a i {
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-service-details .post .flat-video.page a:hover i {
+  color: #ff9c00;
+}
+.flat-service-details .post .flat-video.page .overlay {
+  opacity: 0.66;
+}
+
+.faq-box {
+  margin-bottom: 35px;
+}
+.faq-box .images {
+  flex: none;
+  margin-right: 46px;
+  margin-top: 3px;
+}
+.faq-box .flat-accordion {
+  width: 100%;
+}
+.faq-box .flat-accordion .title-2 {
+  margin-bottom: 35px;
+}
+.faq-box .flat-accordion .flat-toggle {
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+}
+.faq-box .flat-accordion .flat-toggle:last-child {
+  margin-bottom: 0;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-title {
+  padding: 11px 7px 9px 19px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-title .btn-toggle {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-right: 7px;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-title .btn-toggle::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 600;
+  color: var(--primary-color2);
+  font-size: 14px;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-title.active .btn-toggle {
+  margin-right: 10px;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-title.active .btn-toggle::after {
+  color: var(--primary-color2);
+  content: "\f068";
+  font-size: 16px;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-content {
+  display: none;
+  padding: 12px 10px 13px 20px;
+  border-top: 1px solid #dbdbdb;
+}
+.faq-box .flat-accordion .flat-toggle .toggle-content p {
+  line-height: 28px;
+  letter-spacing: -0.05px;
 }
 
 /* Footer
@@ -5644,6 +5842,54 @@ a:focus, a:hover {
   min-width: 100px;
 }
 
+.btn-upload {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  display: flex !important;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #fff;
+  background: #45ab49;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+.btn-upload::before {
+  content: "\f1c1";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 22px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  position: absolute;
+  right: 19px;
+  font-weight: 600;
+}
+
+.uploadFile {
+  position: relative;
+}
+.uploadFile #filename2,
+.uploadFile #filename {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
 /* 
    * Button 
    * page title
@@ -6143,45 +6389,6 @@ a:focus, a:hover {
 .flat-faq .wrap-faq {
   padding-left: 239px;
   padding-right: 239px;
-}
-.flat-faq .flat-accordion .flat-toggle {
-  border-top: 1px solid var(--primary-color5);
-  border-bottom: unset;
-}
-.flat-faq .flat-accordion .flat-toggle:last-child {
-  border-bottom: 1px solid var(--primary-color5);
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title {
-  padding: 20px 7px 20px 1px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title .btn-toggle {
-  float: right;
-  margin-top: -2px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title .btn-toggle::after {
-  content: "\f067";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 500;
-  color: var(--primary-color2);
-  font-size: 18px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title.active .btn-toggle::after {
-  color: var(--primary-color2);
-  content: "\f068";
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-content {
-  padding: 0px 70px 23px 2px;
-  display: none;
-  margin-top: -15px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-content p {
-  font-size: 18px;
-  line-height: 28px;
 }
 
 .flat-skill {

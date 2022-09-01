@@ -250,6 +250,20 @@ $borderW: 2px;
     }
 }
 
+.blob-btn.btn-2 {
+    background-color: $color-3 ;
+    color: $color-6;
+    .blob-btn__inner {
+        background: $color-1 ;
+    }
+    .blob-btn__blob {
+        background: $color-3;
+    }
+    &:hover {
+        color: $color-1;
+    }
+}
+
 .img-svg {
     display: none;
 }

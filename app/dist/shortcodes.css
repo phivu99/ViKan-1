@@ -498,45 +498,6 @@
   padding-left: 239px;
   padding-right: 239px;
 }
-.flat-faq .flat-accordion .flat-toggle {
-  border-top: 1px solid var(--primary-color5);
-  border-bottom: unset;
-}
-.flat-faq .flat-accordion .flat-toggle:last-child {
-  border-bottom: 1px solid var(--primary-color5);
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title {
-  padding: 20px 7px 20px 1px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title .btn-toggle {
-  float: right;
-  margin-top: -2px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title .btn-toggle::after {
-  content: "\f067";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 500;
-  color: var(--primary-color2);
-  font-size: 18px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-title.active .btn-toggle::after {
-  color: var(--primary-color2);
-  content: "\f068";
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-content {
-  padding: 0px 70px 23px 2px;
-  display: none;
-  margin-top: -15px;
-}
-.flat-faq .flat-accordion .flat-toggle .toggle-content p {
-  font-size: 18px;
-  line-height: 28px;
-}
 
 .flat-skill {
   background: #F6F7FA;

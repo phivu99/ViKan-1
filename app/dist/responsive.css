@@ -695,6 +695,18 @@
   .flat-video-page.style {
     padding-bottom: 90px;
   }
+
+  .flat-service-details .side-bar {
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .flat-service-details .post .image-1 img {
+    width: 100%;
+  }
+  .flat-service-details .post .faq-box .images {
+    margin-right: 30px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -1349,10 +1361,53 @@
 
   .flat-video-page.style {
     padding-top: 0px;
+    padding-bottom: 75px;
   }
 
-  .flat-video-page.style {
-    padding-bottom: 75px;
+  .flat-service-details {
+    padding-bottom: 60px;
+  }
+  .flat-service-details .side-bar {
+    margin-bottom: 50px;
+  }
+  .flat-service-details .side-bar .widget {
+    padding: 30px 15px;
+  }
+  .flat-service-details .side-bar .widget-categories {
+    margin-bottom: 35px;
+  }
+  .flat-service-details .post .image-1 {
+    margin-bottom: 30px;
+  }
+  .flat-service-details .post .title-1 {
+    margin-bottom: 20px;
+  }
+  .flat-service-details .post .faq-box {
+    display: block;
+  }
+  .flat-service-details .post .faq-box .images {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .flat-service-details .post .faq-box .flat-accordion .title-2 {
+    margin-bottom: 25px;
+  }
+  .flat-service-details .post .faq-box .flat-accordion .flat-toggle .toggle-content {
+    display: none;
+    padding: 12px 10px 13px 15px;
+  }
+  .flat-service-details .post .title-3 {
+    margin-bottom: 25px;
+  }
+  .flat-service-details .post .check {
+    margin-bottom: 40px;
+  }
+  .flat-service-details .post .get-contact .box {
+    display: block;
+  }
+  .flat-service-details .post .get-contact .box .content {
+    padding: 35px 10px 35px 10px;
   }
 
   .po-content-one {
