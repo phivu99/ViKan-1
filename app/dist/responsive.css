@@ -707,6 +707,16 @@
   .flat-service-details .post .faq-box .images {
     margin-right: 30px;
   }
+
+  .flat-gallery.page {
+    padding-bottom: 60px;
+  }
+  .flat-gallery.page .wrap .box-gallery {
+    width: calc(50% - 30px);
+  }
+  .flat-gallery.page .flat-tabs .box-tab {
+    margin-bottom: 45px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -1408,6 +1418,24 @@
   }
   .flat-service-details .post .get-contact .box .content {
     padding: 35px 10px 35px 10px;
+  }
+
+  .flat-gallery.page {
+    padding-bottom: 45px;
+  }
+  .flat-gallery.page .wrap .box-gallery {
+    width: calc(100% - 30px);
+  }
+  .flat-gallery.page .flat-tabs .tab-title {
+    flex-wrap: wrap;
+  }
+  .flat-gallery.page .flat-tabs .tab-title li {
+    margin-right: 11px;
+    margin-left: 11px;
+    margin-bottom: 5px;
+  }
+  .flat-gallery.page .flat-tabs .box-tab {
+    margin-bottom: 25px;
   }
 
   .po-content-one {

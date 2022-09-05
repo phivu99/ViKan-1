@@ -804,6 +804,16 @@
         }
       }
     }
+
+    .flat-gallery.page {
+      padding-bottom: 60px;
+      .wrap .box-gallery {
+        width: calc(50% - 30px);
+      }
+      .flat-tabs .box-tab {
+        margin-bottom: 45px;
+      }
+    }
   
 
    
@@ -1602,6 +1612,27 @@
         }
       }
     }
+
+    .flat-gallery.page {
+      padding-bottom: 45px;
+      .wrap .box-gallery {
+        width: calc(100% - 30px);
+      }
+      .flat-tabs {
+        .tab-title {
+          flex-wrap: wrap;
+          li {
+            margin-right: 11px;
+            margin-left: 11px;
+            margin-bottom: 5px;
+          }
+        }
+        .box-tab {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  
 
 
  
