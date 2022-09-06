@@ -732,6 +732,9 @@
 
     .flat-team {
       padding-bottom: 75px;
+      &.page {
+        padding-bottom: 90px;
+      }
       .box-team .images img {
         width: 100%;
       }
@@ -1017,18 +1020,20 @@
       }
     }
 
-    .flat-vegetables .flat-tabs {
-      .box-tab {
-        margin-bottom: 20px;
-      }
-      .tab-title {
-        flex-wrap: wrap;
-        li {
-          margin-right: 10px;
-          margin-left: 10px;
-          margin-bottom: 10px;
-          .icon {
+    .flat-vegetables {
+      .flat-tabs {
+        .box-tab {
+          margin-bottom: 20px;
+        }
+        .tab-title {
+          flex-wrap: wrap;
+          li {
+            margin-right: 10px;
+            margin-left: 10px;
             margin-bottom: 10px;
+            .icon {
+              margin-bottom: 10px;
+            }
           }
         }
       }
@@ -1498,8 +1503,13 @@
       }
     }
 
-    .flat-team .box-team .images {
-      margin: 15px;
+    .flat-team {
+      &.page {
+        padding-bottom: 75px;
+      }
+      .box-team .images {
+        margin: 15px;
+      }
     }
 
     .flat-icon.page2 {
@@ -1633,9 +1643,23 @@
       }
     }
   
-
-
- 
+    .flat-faq {
+      .heading-section {
+        margin-bottom: 40px;
+      }
+      .flat-accordion .flat-toggle {
+        .toggle-title {
+          padding: 14px 15px 13px;
+        }    
+        .toggle-content {
+          padding: 20px 15px 20px 15px;
+          .texts {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+   
   
   
 

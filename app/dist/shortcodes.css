@@ -476,29 +476,6 @@
   color: #FABE3C;
 }
 
-.flat-faq {
-  padding-bottom: 100px;
-}
-.flat-faq.home2 {
-  margin-top: -8px;
-  padding-top: 0;
-  background: linear-gradient(180deg, #FFFFFF 0%, rgb(243, 244, 246) 100%);
-  padding-bottom: 0;
-}
-.flat-faq .heading-section {
-  margin-bottom: 48px;
-}
-.flat-faq .heading-section h5 {
-  margin-bottom: 13px;
-}
-.flat-faq .heading-section h2 {
-  margin-bottom: 25px;
-}
-.flat-faq .wrap-faq {
-  padding-left: 239px;
-  padding-right: 239px;
-}
-
 .flat-skill {
   background: #F6F7FA;
   padding-bottom: 54px;

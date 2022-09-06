@@ -340,4 +340,38 @@ var swiper =  new Swiper(".carousel-team", {
     },
 });
 
+var swiper =  new Swiper(".carousel-team2", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    loop:false,
+    slidesPerView: 1,
+    slidesPerColumn: 3,
+    slidesPerColumnFill: 'row',
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 50,
+        },
+    },
+});
+
 
