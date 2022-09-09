@@ -374,4 +374,32 @@ var swiper =  new Swiper(".carousel-team2", {
     },
 });
 
+var swiper =  new Swiper(".carousel-shop", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
 

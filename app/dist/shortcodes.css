@@ -623,57 +623,57 @@
   font-weight: 400;
 }
 
-.flat-contact .image {
+.flat-contacts .image {
   background-image: url(../images/img-box/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-.flat-contact .wrap-contact {
+.flat-contacts .wrap-contact {
   padding: 85px 23% 78px 13.8%;
 }
-.flat-contact .wrap-contact .heading-section h5 {
+.flat-contacts .wrap-contact .heading-section h5 {
   margin-bottom: 13px;
 }
-.flat-contact #comments .comment-form fieldset {
+.flat-contacts #comments .comment-form fieldset {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin-bottom: 25px;
 }
-.flat-contact #comments .comment-form fieldset input {
+.flat-contacts #comments .comment-form fieldset input {
   background-color: #F7F7F7;
   border: #F7F7F7;
   padding: 14px 15px 13px 21px;
   border-radius: 28px;
 }
-.flat-contact #comments .comment-form fieldset input::placeholder {
+.flat-contacts #comments .comment-form fieldset input::placeholder {
   color: var(--primary-color6);
   line-height: 26px;
   font-size: 16px;
   font-family: "League Spartan", sans-serif;
 }
-.flat-contact #comments .comment-form textarea {
+.flat-contacts #comments .comment-form textarea {
   padding: 15px 19px 25px 21px;
   background-color: #F7F7F7;
   border: #F7F7F7;
   border-radius: 28px;
 }
-.flat-contact #comments .comment-form textarea::placeholder {
+.flat-contacts #comments .comment-form textarea::placeholder {
   color: var(--primary-color6);
   line-height: 26px;
   font-size: 16px;
   font-family: "League Spartan", sans-serif;
 }
-.flat-contact #comments .comment-form .button {
+.flat-contacts #comments .comment-form .button {
   width: 100%;
   height: 56px;
   padding: 0;
   background-color: var(--primary-color3);
   border-radius: 28px;
 }
-.flat-contact #comments .comment-form .button:hover {
+.flat-contacts #comments .comment-form .button:hover {
   background: var(--primary-color2);
 }
 
